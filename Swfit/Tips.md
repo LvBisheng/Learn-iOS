@@ -22,3 +22,7 @@ let intMetatype: Int.Type = Int.self
 public typealias AnyClass = AnyObject.Type
 ```
 * type(of:)和.self都可以获得元类型的值，区别在于.self取到的是静态的元类型，声明的时候是什么类型就是什么类型。type(of:)取的是运行时候的类型，也就是这个实例的类型。
+
+## Swift和Objective-C中nil的区别
+Swift 的 nil 和 Objective-C 中的 nil 并不一样。在 Objective-C 中，nil 是一个指向不存在对象的指针。在 Swift 中，nil 不是指针——它是一个确定的值，用来表示值缺失。任何类型的可选状态都可以被设置为 nil，不只是对象类型。
+
