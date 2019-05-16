@@ -2,6 +2,10 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|14|[iOS10推送必看UNNotificationContentExtension](https://www.jianshu.com/p/45933f5450a4)|自定义推送的view|2019-05-16|
+|13|[iOS10推送必看UNNotificationAttachment以及UNTimeIntervalNotificationTrigger](https://www.jianshu.com/p/3d602a60ca4f)||2019-05-16|
+|12|[iOS开发 iOS10推送必看(基础篇)](https://www.jianshu.com/p/f5337e8f336d)|推送|2019-05-16|
+|11|[iOS10推送必看UNNotificationServiceExtension](https://www.jianshu.com/p/f77d070a8812)|推送、UNNotificationServiceExtension|2019-05-16|
 |10|[iOS Provisioning Profile(Certificate)与Code Signing详解](https://blog.csdn.net/phunxm/article/details/42685597)||2019-05-15|
 |9|[图解公钥与私钥](https://blog.csdn.net/linuxnews/article/details/51119862)|公钥、私钥|2019-05-15||
 |8|[iOS如何为NSMutableArray添加KVO](http://liumh.com/2015/08/22/ios-nsmutablearray-kvo/)|KVO、NSMutableArray|2019-05-15||
