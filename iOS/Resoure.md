@@ -2,6 +2,9 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|17|[iOS编译与app启动](https://www.jianshu.com/p/65901441903e)||2019-05-23|
+|16|[iOS编译过程的原理和应用](https://www.jianshu.com/p/09bd9b468e17)||2019-05-23||
+|15|[Cocoapods原理总结](https://juejin.im/entry/59dd94b06fb9a0451463030b)||2019-05-22||
 |14|[iOS10推送必看UNNotificationContentExtension](https://www.jianshu.com/p/45933f5450a4)|自定义推送的view|2019-05-16|
 |13|[iOS10推送必看UNNotificationAttachment以及UNTimeIntervalNotificationTrigger](https://www.jianshu.com/p/3d602a60ca4f)||2019-05-16|
 |12|[iOS开发 iOS10推送必看(基础篇)](https://www.jianshu.com/p/f5337e8f336d)|推送|2019-05-16|
