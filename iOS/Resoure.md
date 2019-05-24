@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|19|[字符编码的概念（UTF-8、UTF-16、UTF-32都是什么鬼](https://blog.csdn.net/guxiaonuan/article/details/78678043)|字符集、字符编码|2019-05-24||
+|18|[UNICODE,GBK,UTF-8区别](https://www.cnblogs.com/gavin-num1/p/5170247.html)||2019-05-24|
 |17|[iOS编译与app启动](https://www.jianshu.com/p/65901441903e)||2019-05-23|
 |16|[iOS编译过程的原理和应用](https://www.jianshu.com/p/09bd9b468e17)||2019-05-23||
 |15|[Cocoapods原理总结](https://juejin.im/entry/59dd94b06fb9a0451463030b)||2019-05-22||
