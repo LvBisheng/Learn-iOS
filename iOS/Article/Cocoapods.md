@@ -59,10 +59,9 @@ CocoaPods是Swift和Objective-C Cocoa项目的依赖管理器，是用Ruby语言
 * 使用Pod install时，默认情况下，会去更新本地索引库，可以在后面添加``` --no-repo-update ```忽略更新。
 * pod会根据```Podfile```文件查找索引列表，找到库所对应的Podspec文件，获取库的真实地址。
 * 下载三方库到本地
+![Image text](http://pv8mnetxz.bkt.clouddn.com/Tips_Cocoapods%E6%B5%81%E7%A8%8B%E5%85%B3%E7%B3%BB%E5%9B%BE.jpg)
 
-[流程关系图](img/Tips_Cocoapods流程关系图.jpg)
-
-## 公有库的创建
+## CocoaPods公有库的创建
 1. 注册CocoaPods账号：``` pod trunk register [GitHub_email] [user_name] --verbose ```
     
     * 接着终端会出现文字:``` 
@@ -72,12 +71,13 @@ CocoaPods是Swift和Objective-C Cocoa项目的依赖管理器，是用Ruby语言
     * CocoaPods会发一个确认邮件到邮箱，登陆邮箱确认
 2. 确认后查看注册信息：``` pod trunk me ```
 3. 创建GitHub代码仓库：
-    * 项目中的文件、目录结构：[结构图](img/创建公有仓库文件结构.png)
+    * 项目中的文件、目录结构：
         * LICENSE：开源许可证
         * README.md：仓库文件
         * 你的代码（需要共享的代码目录）
         * xxx.podspec：CocoaPods的描述文件
         * 代码使用样例：不是必须的
+        ![image text](http://pv8mnetxz.bkt.clouddn.com/%E5%88%9B%E5%BB%BA%E5%85%AC%E6%9C%89%E4%BB%93%E5%BA%93%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.png)
     * 创建.podspec: ``` pod spec create [文件名称] ```。 文件参考格式：
         ``` 
               Pod::Spec.new do |s|
@@ -122,5 +122,37 @@ CocoaPods是Swift和Objective-C Cocoa项目的依赖管理器，是用Ruby语言
 3. 打上标签推送远程
 4. ``` pod trunk push xxxx.podspec ```推送到pods仓库
 
+## CocoaPods私有库创建（大部分和CocoPods公有库的创建相似）
+1. 创建私有版本库。创建一个像[master](https://github.com/CocoaPods/Specs)一样存放版本描述文件的git仓库
+2. 将远程的私有版本仓库添加到本地(在Finder目录``` ~/.cocopods/repos ```)，``` repo ```就是repository储存库的缩写。
+    ```
+    pod repo add LBSRepo https://git.oschina.net/lvbisheng/LBSRepo.git
+    ```
+3. 创建私人代码库，创建时添加```MIT License```和```README```。
+4. 将仓库克隆到本地，添加你的代码文件、仓库名.podspec、LICENSE：开源许可证、README.md、你的代码（需要共享的代码目录）、代码使用样例：不是必须的
+5. 验证仓库配置：``` pod lib lint ```
+    用oschina创建私人仓库，在验证时可能会找不到MIT LICENSE证书，需要修改一些配置文件
+    ```
+    
+    s.license = "MIT"
+    修改为,指定文件
+    s.license = { :type => "MIT", :file => "LICENSE"}
+    
+    ```
+1. 将项目打上标签推到远程仓库
+2. 将描述文件推送到版本库：``` pod repo push  LBSRepo MyAdditons.podspec``` 
+    此过程：
+    1. 验证MyAdditions.podspec文件
+    2. 拉取远程版本库LBSRepo
+    3. 添加MyAddions.podspex到版本库中
+    4. push到仓库
+3. 使用私有库：需要在``` Podfile ```中添加这句话：
+    
+    ```
+        source 'https://git.oschina.net/lvbisheng/LBSRepo.git'
+     
+    ```
+
 ## 相关命令
-* mac显示隐藏文件:``` defaults write com.apple.finder AppleShowAllFiles YES ```
+* 查看本地Pod索引库：``` pod repo list ```
+* mac显示隐藏文件：``` defaults write com.apple.finder AppleShowAllFiles YES ```

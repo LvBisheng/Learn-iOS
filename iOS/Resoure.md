@@ -2,6 +2,9 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|29|[CocoaPods 私有仓库的创建（超详细）](https://www.jianshu.com/p/0c640821b36f)|CocoaPods|2019-07-26|
+|28|[Git & CocoaPods & 私有化，你不得不知的组件化基础！](https://blog.51cto.com/13533483/2057387)|CocoaPods|2019-07-26|
+|27|[CocoaPods 公有仓库的创建（超详细）](https://www.jianshu.com/p/d2d98298b1b8)|CocoaPods|2019-07-26|
 |26|[iOS黑魔法Method Swizzling](https://www.jianshu.com/p/05e82fbe7132)|Method Swizzling|2019-07-18|
 |25|[iOS 消息发送与转发详解](https://juejin.im/post/5aa79411f265da237a4cb045)|消息发送、消息转发|2019-07-16|
 |24|[Xcode工程文件project.pbxproj小结](https://www.jianshu.com/p/e82ec6a56fc2)||2019-07-05|
