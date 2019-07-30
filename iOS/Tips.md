@@ -46,28 +46,59 @@ MyClass *myClass = [[MyClass alloc] init];
 ## Cocoapods
 [具体文章](Article/Cocoapods.md)
 
+## GCD多线程
+两个核心概念：任务和队列。
+* **任务**：就是执行操作的意思，换句话说就是你在线程中执行的那段代码。分为：**同步执行(sync)**和**异步执行(async)**。
+    * **同步执行(sync)**:
+        1. 同步添加任务到指定的队列中，在添加的任务执行结束之前，会一直等待，直到队列里面的任务完成之后再继续执行。
+        2. 只能在当前线程中执行任务，不具备开启新线程的能力。
+    * **异步执行(async)**
+        3. 异步添加任务到指定的队列中，它不会做任何等待，可以继续执行任务。
+        4. 可以在新的线程中执行任务，具备开启新线程的能力。
+* **队列**: 这里的队列指执行任务的等待队列，即用来存放任务的队列。队列是一种特殊的线性表，采用 FIFO（先进先出）的原则，即新任务总是被插入到队列的末尾，而读取任务的时候总是从队列的头部开始读取。分为：**串行队列（Serial Dispatch Queue）**和**并发队列（Concurrent Dispatch Queue）**。
+    1. 串行队列（Serial Dispatch Queue）: 每次只有一个任务被执行。让任务一个接着一个地执行。（只开启一个线程，一个任务执行完毕后，再执行下一个任务）
+    2. 并发队列（Concurrent Dispatch Queue）: 可以让多个任务并发（同时）执行。（可以开启多个线程，并且同时执行任务）
+        ```
+        注意：并发队列的并发功能只有在异步（dispatch_async）函数下才有效
+        ```
+* 队列和任务的组合（主队列比较特殊）：
+    
+    |区别|并发队列|串行队列|主队列|
+    |:--:|:--:|:--:|:--:|
+    |同步(sync)|没有开启新线程，串行执行任务|没有开启新线程，串行执行任务|1.主线程调用：死锁卡住不执行 2.其他线程调用：没有开启新线程，串行执行任务|
+    |异步(async)|有开启新线程，并发执行任务|有开启新线程(1条)，串行执行任务|没有开启新线程，串行执行任务|
+[参考文章](https://www.jianshu.com/p/2d57c72016c6)
 
-## RunLoop
-### RunLoop概念
-   * 一般来讲，一个线程一次只能执行一个任务，执行完成后线程就会退出。如果我们需要一个机制，让线程能随时处理事件但并不退出，通常的代码逻辑是这样的：
-   
+## GCD信号量: dispatch_semaphore
+GCD中的信号量是指``` Dispatch Semaphore ```, 是持有计数的信号。
+* ```dispatch_semaphore_create```: 创建一个Semaphore并初始化信号的总量
+* ``` dispatch_semaphore_signal ```: 发送一个信号，让信号总量+1
+* ``` dispatch_semaphore_wait ```: 可以使总信号量-1，减完后信号总量小于0时就会一直等待（阻塞所在线程），否则就可以正常执行。
+
+#### 实际开发应用：
+1. 保持线程同步，将异步执行任务转换为同步执行任务。
     ```
-    function loop() {
-        initialize();
-        do {
-            var message = get_next_message();
-            process_message(message);
-        } while (message != quit);
-    }
+     NSLog(@"currentThread---%@",[NSThread currentThread]);      
+     NSLog(@"semaphore---begin");
+    
+    dispatch_queue_t queue = 
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);     
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); // 1. 当前计数总数为0
+    
+    __block int number = 0;
+    dispatch_async(queue, ^{
+        // 追加任务1
+        [NSThread sleepForTimeInterval:2];              
+        NSLog(@"1---%@",[NSThread currentThread]);      
+        
+        number = 100;
+        
+        dispatch_semaphore_signal(semaphore); // 3. 发送信号，计数总数为0，停止等待
+    });
+    
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER); // 2.执行到这里时计数总数为-1，进行等待
+    NSLog(@"semaphore---end,number = %zd",number); // 4. 停止等待，执行到这里
+    
     ```
-      这种模型通常叫做Event Loop。
-
-* Runloop实际上是一个对象，这个对象管理了其需要处理的事件和消息，并提供了一个入口函数来执行Event Loop的逻辑。线程执行了这个函数后，就会一直处于这个函数内部“接收消息->等待->处理”的循环中，知道这个循环结束(比如传人quit的消息），函数返回。
-* OSX/iOS系统中，提供了两个这样的对象：NSRunLoop和CFRunLoopRef。
-     * CFRunLoopRef 是在 CoreFoundation 框架内的，它提供了纯 C 函数的 API，所有这些 API 都是线程安全的。
-     * NSRunLoop 是基于 CFRunLoopRef 的封装，提供了面向对象的 API，但是这些 API 不是线程安全的。
-
-### RunLoop与线程的关系
-* CFRunLoop是基于线程对象pthread_t(NSTread是pthread_t的封装)管理的。
-* 线程和 RunLoop 之间是一一对应的，其关系是保存在一个全局的 Dictionary 里。线程刚创建时并没有 RunLoop，如果你不主动获取，那它一直都不会有。RunLoop 的创建是发生在第一次获取时，RunLoop 的销毁是发生在线程结束时。你只能在一个线程的内部获取其 RunLoop（主线程除外）。
+2. 保证线程安全，为线程加锁。
 
