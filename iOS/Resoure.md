@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|32|[iOS开发之设备唯一标识UDID、OpenUDID、UUID、IMEI\IMSI、IDFA、IDFV](https://blog.csdn.net/jackjia2015/article/details/84325240)|设备标识 |2019-08-13|
+|31|[Xcode中other linker flags的作用](https://blog.csdn.net/iosfengguibin/article/details/52086435)||2019-08-09|
 |30|[iOS 多线程：『GCD』详尽总结](https://www.jianshu.com/p/2d57c72016c6)|GCD|2019-07-29|
 |29|[CocoaPods 私有仓库的创建（超详细）](https://www.jianshu.com/p/0c640821b36f)|CocoaPods|2019-07-26|
 |28|[Git & CocoaPods & 私有化，你不得不知的组件化基础！](https://blog.51cto.com/13533483/2057387)|CocoaPods|2019-07-26|
