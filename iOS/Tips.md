@@ -103,4 +103,5 @@ GCD中的信号量是指``` Dispatch Semaphore ```, 是持有计数的信号。
 2. 保证线程安全，为线程加锁。
 
 #### iOS设备标识
-![设备标识](http://pv8mnetxz.bkt.clouddn.com/WechatIMG90.jpeg)
+![设备标识](https://mygithub.oss-cn-shenzhen.aliyuncs.com/img/WechatIMG230.jpeg
+)
