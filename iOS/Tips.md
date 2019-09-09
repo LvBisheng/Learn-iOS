@@ -102,6 +102,31 @@ GCD中的信号量是指``` Dispatch Semaphore ```, 是持有计数的信号。
     ```
 2. 保证线程安全，为线程加锁。
 
-#### iOS设备标识
-![设备标识](https://mygithub.oss-cn-shenzhen.aliyuncs.com/img/WechatIMG230.jpeg
-)
+## iOS设备标识
+![设备标识](https://mygithub.oss-cn-shenzhen.aliyuncs.com/img/WechatIMG230.jpeg)
+ 
+## iOS开发中的处理器指令集
+##### 什么是指令集
+系统所安排的每一个命令，都需要CPU根据预先设定好的某一条指令来完成，而这些预先设定好的指令称为CPU指令集。CPU指令集都是存储在CPU内部的，主要是对CPU运算进行优化、指导的硬程序。一般来说，预设存储的指令越多，那么CPU就越“聪明”，预设存储的指令越先进，CPU也就越高级，预设的很多指令集中在一起，那么就是所谓的“指令集”。
+#####介绍
+* armv7｜armv7s｜arm64都是ARM处理器的指令集
+* i386｜x86_64 是Mac处理器的指令集
+
+##### 这些指令集在那些设备中有用到呢？
+
+```
+arm64：iPhone6s | iphone6s plus｜iPhone6｜ iPhone6 plus｜iPhone5S | iPad Air｜ iPad mini2(iPad mini with Retina Display)
+armv7s：iPhone5｜iPhone5C｜iPad4(iPad with Retina Display)
+armv7：iPhone4｜iPhone4S｜iPad｜iPad2｜iPad3(The New iPad)｜iPad mini｜iPod Touch 3G｜iPod Touch4
+
+i386是针对intel通用微处理器32位处理器
+x86_64是针对x86架构的64位处理器
+
+模拟器32位处理器测试需要i386架构，
+模拟器64位处理器测试需要x86_64架构，
+真机32位处理器需要armv7,或者armv7s架构，
+真机64位处理器需要arm64架构。
+```
+
+[参考文章](https://www.jianshu.com/p/3fce0bd6f045)
+

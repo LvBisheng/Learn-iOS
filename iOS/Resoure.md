@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|34|[iOS 中的 armv7,armv7s,arm64,i386,x86_64 都是什么](https://www.jianshu.com/p/3fce0bd6f045)|iOS开发中的处理器指令集|2019-08-22||
+|33|[iOS - 淡入淡出切换rootViewController](https://www.jianshu.com/p/667467b6b76f)||2019-08-19||
 |32|[iOS开发之设备唯一标识UDID、OpenUDID、UUID、IMEI\IMSI、IDFA、IDFV](https://blog.csdn.net/jackjia2015/article/details/84325240)|设备标识 |2019-08-13|
 |31|[Xcode中other linker flags的作用](https://blog.csdn.net/iosfengguibin/article/details/52086435)||2019-08-09|
 |30|[iOS 多线程：『GCD』详尽总结](https://www.jianshu.com/p/2d57c72016c6)|GCD|2019-07-29|
