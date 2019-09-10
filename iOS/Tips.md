@@ -130,3 +130,5 @@ x86_64是针对x86架构的64位处理器
 
 [参考文章](https://www.jianshu.com/p/3fce0bd6f045)
 
+#### ruby、rvm、gem、gems、bundle、gemfile简单总结
+[具体文章](Article/ruby、rvm、gem、gems、bundle、gemfile简单总结.md)
