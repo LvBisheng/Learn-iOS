@@ -2,6 +2,11 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|39|[Xcode 11 初体验](https://juejin.im/post/5d8b0b6951882502c5533e9b?utm_source=gold_browser_extension)||2019-09-30||
+|38|[使用Xcode10调试iOS13设备](https://juejin.im/post/5d50176ef265da03ab423f80)|Device Support File里面粘贴对应的文件夹及其内容(13.0)|2019-09-20||
+|37|[一行代码解决！iOS二进制重排启动优化](https://new.qq.com/rain/a/20190903A0OKY400)|缺页中断(page fault):当进程访问一个虚拟内存page而对应的物理内存却不存在时，会触发一次缺页中断，加载对应的物理页，建立起虚拟内存和物理内存的映射关系。频繁的page fault会增加指令执行的耗时，增大disk thrashing的风险，从而导致指令的执行时间慢，最终影响启动速度。二进制重排，就是解决这两个问题，将所有启动期间先后执行的函数代码，紧凑的排列在顺序的二进制中，使得pc寄存器的指令跳转幅度大幅降低。让单个物理页能尽可能的加载更多的当前或下一条待执行的函数|2019-09-18||
+|36|[抖音研发实践：基于二进制文件重排的解决方案 APP启动速度提升超15%](https://mp.weixin.qq.com/s/Drmmx5JtjG3UtTFksL6Q8Q)||2019-09-18||
+|35|[理解Mach-O文件格式(1)](https://www.jianshu.com/p/d43a8279a1c2)|Apple家的系统只支持三种给予可执行权限的格式：1.以``` #! ```开头的脚本文件 2.通用二进制文件 3.Mach-O格式文件。通用二进制文件fat binary其实是多个架构的Mach-O文件的打包体,通过```Magic Number```魔数来区分。Mach-O文件的结构分为Header(有文件类型、目标架构等数据)、Load commands(描述文件在虚拟内存中的逻辑结构、布局)、Raw segment data(在Load commands中定义的Segment的原始数据)|2019-09-18||
 |34|[iOS 中的 armv7,armv7s,arm64,i386,x86_64 都是什么](https://www.jianshu.com/p/3fce0bd6f045)|iOS开发中的处理器指令集|2019-08-22||
 |33|[iOS - 淡入淡出切换rootViewController](https://www.jianshu.com/p/667467b6b76f)||2019-08-19||
 |32|[iOS开发之设备唯一标识UDID、OpenUDID、UUID、IMEI\IMSI、IDFA、IDFV](https://blog.csdn.net/jackjia2015/article/details/84325240)|设备标识 |2019-08-13|
