@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|41|[NSLayoutAnchor详解](https://www.jianshu.com/p/b94b28a8a642)|NSLayoutConstraint、NSLayoutAnchor、NSLayoutAttribute、UILayoutGuide、UILayoutSupport|2019-10-26||
+|40|[iOS开发-LayoutGuide的前世今生（从top/bottom LayoutGuide到Safe Area）](https://www.jianshu.com/p/f2cb5f8e747f)|1. iOS7: topLayoutGuide/bottomLayoutGuide其实就是作为虚拟的占坑`view`，用于自动布局的时候帮助开发者避开顶部的状态栏，导航栏以及底部的tabbar等。 2. iOS9: 有了虚拟view的思路，又考虑能不能去除top/bottom概念的局限性，让开发者都可以灵活自定义这个隔离区域，又提供一些更方便简易易懂的API方便进行代码自动布局，于是有了UILayoutGuide这个类。 3. iOS11: 自定义了一个UILayoutGuide，给开发者提供了一个只读属性的safeAreaLayoutGuide，并且提出安全区域的概念。Safe Area，苹果建议在这个安全域内放置UI控件。这个安全域的范围将整个屏幕隔离出状态栏，导航栏，tabbaar，以及iPhoneX顶部刘海，底部虚拟home手势区域的范围。也就是升级版的topLayoutGuide/bottomLayoutGuide。|2019-10-25||
 |39|[Xcode 11 初体验](https://juejin.im/post/5d8b0b6951882502c5533e9b?utm_source=gold_browser_extension)||2019-09-30||
 |38|[使用Xcode10调试iOS13设备](https://juejin.im/post/5d50176ef265da03ab423f80)|Device Support File里面粘贴对应的文件夹及其内容(13.0)|2019-09-20||
 |37|[一行代码解决！iOS二进制重排启动优化](https://new.qq.com/rain/a/20190903A0OKY400)|缺页中断(page fault):当进程访问一个虚拟内存page而对应的物理内存却不存在时，会触发一次缺页中断，加载对应的物理页，建立起虚拟内存和物理内存的映射关系。频繁的page fault会增加指令执行的耗时，增大disk thrashing的风险，从而导致指令的执行时间慢，最终影响启动速度。二进制重排，就是解决这两个问题，将所有启动期间先后执行的函数代码，紧凑的排列在顺序的二进制中，使得pc寄存器的指令跳转幅度大幅降低。让单个物理页能尽可能的加载更多的当前或下一条待执行的函数|2019-09-18||
