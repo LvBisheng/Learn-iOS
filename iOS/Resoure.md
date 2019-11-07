@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|43|[iOS OC内联函数 inline](https://www.jianshu.com/p/d557b0831c6a)|inline内联函数。1.代替宏，避免了宏的缺点：需要预编译，因为inline内联函数也是函数,不需要预编译。2.解决函数调用效率的问题。函数之间调用，是内存地址之间的调用。inline函数避免了普通函数,在汇编时必须调用call的缺点:取消了函数的参数压栈，减少了调用的开销,提高效率.所以执行速度确比一般函数的执行速度要快。3.内联函数只是我们向编译器提供的申请,编译器不一定采取inline形式调用函数，例如函数体过大时的函数。|2019-11-01||
+|42|[深入理解 Tagged Pointer](https://www.infoq.cn/article/deep-understanding-of-tagged-pointer/)|Tagged Pointer给 64 位系统带来了内存的节省和运行效率的提高,专门用来存储小的对象，例如NSNumber和NSDate。Tagged Pointer指针的值不再是地址了，而是真正的值。|2019-11-01||
 |41|[NSLayoutAnchor详解](https://www.jianshu.com/p/b94b28a8a642)|NSLayoutConstraint、NSLayoutAnchor、NSLayoutAttribute、UILayoutGuide、UILayoutSupport|2019-10-26||
 |40|[iOS开发-LayoutGuide的前世今生（从top/bottom LayoutGuide到Safe Area）](https://www.jianshu.com/p/f2cb5f8e747f)|1. iOS7: topLayoutGuide/bottomLayoutGuide其实就是作为虚拟的占坑`view`，用于自动布局的时候帮助开发者避开顶部的状态栏，导航栏以及底部的tabbar等。 2. iOS9: 有了虚拟view的思路，又考虑能不能去除top/bottom概念的局限性，让开发者都可以灵活自定义这个隔离区域，又提供一些更方便简易易懂的API方便进行代码自动布局，于是有了UILayoutGuide这个类。 3. iOS11: 自定义了一个UILayoutGuide，给开发者提供了一个只读属性的safeAreaLayoutGuide，并且提出安全区域的概念。Safe Area，苹果建议在这个安全域内放置UI控件。这个安全域的范围将整个屏幕隔离出状态栏，导航栏，tabbaar，以及iPhoneX顶部刘海，底部虚拟home手势区域的范围。也就是升级版的topLayoutGuide/bottomLayoutGuide。|2019-10-25||
 |39|[Xcode 11 初体验](https://juejin.im/post/5d8b0b6951882502c5533e9b?utm_source=gold_browser_extension)||2019-09-30||

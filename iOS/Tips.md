@@ -132,3 +132,10 @@ x86_64是针对x86架构的64位处理器
 
 #### ruby、rvm、gem、gems、bundle、gemfile简单总结
 [具体文章](Article/ruby、rvm、gem、gems、bundle、gemfile简单总结.md)
+
+#### Tagged Pointer
+* 2013年9月苹果推出首个采用64位架构的处理器的iphone5s为了节省内存和提高执行效率，苹果提出了Tagged Pointer的概念。而指针类型的大小通常也是与 CPU 位数相关，一个指针所占用的内存在 32 位 CPU 下为 4 个字节，在 64 位 CPU 下也是 8 个字节。所以一个普通的 iOS 程序，如果没有Tagged Pointer对象，从 32 位机器迁移到 64 位机器中后，虽然逻辑没有任何变化，但这种 NSNumber、NSDate 一类的对象所占用的内存会翻倍。Tagged Pointer,将一个对象的指针拆成两部分，一部分直接保存数据，另一部分作为特殊标记，表示这是一个特别的指针，不指向任何一个地址。
+* Tagged Pointer特点：1.Tagged Pointer专门用来存储小的对象，例如NSNumber和NSDate， 这一类的变量本身的值需要占用的内存大小常常不需要 8 个字节 2.Tagged Pointer指针的值不再是地址了 3.内存读取上有更高的效率。
+* [参考文章](https://www.infoq.cn/article/deep-understanding-of-tagged-pointer/)
+
+
