@@ -139,3 +139,7 @@ x86_64是针对x86架构的64位处理器
 * [参考文章](https://www.infoq.cn/article/deep-understanding-of-tagged-pointer/)
 
 
+#### iOS沙盒
+[具体文章](Article/Sandbox.md)
+
+
