@@ -2,6 +2,8 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|57|[哈希算法详解（附带 iOS 开发中实际应用）](https://www.jianshu.com/p/2a71b027b723)|哈希|2020-02-16|
+|56|[nil、Nil、NULL和NSNull的理解](https://www.jianshu.com/p/a7460f73fd04)||2020-02-14|
 |50|[iOS开发技巧 - 崩溃分析](https://www.jianshu.com/p/77660e626874)||2020-01-20|
 |49|[iOS App的几种安全防范](https://www.jianshu.com/p/0cfb5859f15f)||2020-01-19|
 |48|[React-Native简介与运行原理解析（Eg：ios）](https://www.jianshu.com/p/82a28c8b673b?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)|React Native|2020-01-20|
