@@ -2,6 +2,7 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|58|[Podfile文件用法详解](https://www.jianshu.com/p/b8b889610b7e)|pod|2020-03-18|
 |57|[哈希算法详解（附带 iOS 开发中实际应用）](https://www.jianshu.com/p/2a71b027b723)|哈希|2020-02-16|
 |56|[nil、Nil、NULL和NSNull的理解](https://www.jianshu.com/p/a7460f73fd04)||2020-02-14|
 |50|[iOS开发技巧 - 崩溃分析](https://www.jianshu.com/p/77660e626874)||2020-01-20|
