@@ -2,6 +2,10 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|62|[Xcode命令行脚本打包](https://www.jianshu.com/p/eace84c1b990)|xcodebuild|2020-03-21|
+|61|[iOS 唤起APP之Universal Link(通用链接)](https://juejin.im/post/5dc28383518825108876bd74)|Universal Links|2020-03-19|
+|60|[iOS Universal Links教程](https://www.jianshu.com/p/f1a1e1833eec)|Universal Links|2020-03-19|
+|59|[关于 Podfile.lock 带来的痛](https://www.jianshu.com/p/eb6052701ea3?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)|Podfile.lock|2020-03-19|
 |58|[Podfile文件用法详解](https://www.jianshu.com/p/b8b889610b7e)|pod|2020-03-18|
 |57|[哈希算法详解（附带 iOS 开发中实际应用）](https://www.jianshu.com/p/2a71b027b723)|哈希|2020-02-16|
 |56|[nil、Nil、NULL和NSNull的理解](https://www.jianshu.com/p/a7460f73fd04)||2020-02-14|
