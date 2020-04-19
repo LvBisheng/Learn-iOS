@@ -2,6 +2,7 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|64|[史上最详细的iOS之事件的传递和响应机制-原理篇](https://www.jianshu.com/p/2e074db792ba)| 事件响应着链、传递链|2020-04-19|
 |63|[在现有工程中实施基于CTMediator的组件化方案](https://casatwy.com/modulization_in_action.html)| CTMediator 、Target-Action组件化|2020-04-16|
 |63|[iOS应用架构谈 组件化方案](https://casatwy.com/iOS-Modulization.html)|Target-Action组件化|2020-04-16|
 |62|[Xcode命令行脚本打包](https://www.jianshu.com/p/eace84c1b990)|xcodebuild|2020-03-21|
