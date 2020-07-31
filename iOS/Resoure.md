@@ -2,12 +2,13 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
-|69|[iOS系统中导航栏的转场解决方案与最佳实践](https://juejin.im/post/6844903700192854024)|导航栏、translucent、opaque、edgesForExtendedLayout、extendedLayoutIncluedsOpaqueBars、contentInsetAdjustmentBehavior、导航栏转场实现方案|2020-07-31|
-|68|[是时候了解一下UILayoutGuide了](https://www.jianshu.com/p/b5c3e0482f29)|UILayoutGuide|2020-07-31|
-|67|[UIBarButtonItem 在 iOS 11 上的改变及应对方案](https://sketchk.xyz/2018/02/23/How-to-make-your-UIBarButtonItem-perfect-match-in-iOS/)|UIBarButtonItem|2020-07-31|
-|66|[优雅的动画实现方案SVGA、Lottie](https://www.jianshu.com/p/60d28d7bab48)||2020-07-27|
-|65|[iOS Instruments工具使用](https://www.jianshu.com/p/4b882f1bd1a9)||2020-07-16|
-|64|[UIKit: UIControl](http://southpeak.github.io/2015/12/13/cocoa-uikit-uicontrol/?from=%E6%96%87%E7%AB%A0%E9%A1%B5%E5%86%85%E9%93%BE%E6%8E%A5)| UIControl |2020-04-21|
+|70|[iOS系统中导航栏的转场解决方案与最佳实践](https://juejin.im/post/6844903700192854024)|导航栏、translucent、opaque、edgesForExtendedLayout、extendedLayoutIncluedsOpaqueBars、contentInsetAdjustmentBehavior、导航栏转场实现方案|2020-07-31|
+|69|[是时候了解一下UILayoutGuide了](https://www.jianshu.com/p/b5c3e0482f29)|UILayoutGuide|2020-07-31|
+|68|[UIBarButtonItem 在 iOS 11 上的改变及应对方案](https://sketchk.xyz/2018/02/23/How-to-make-your-UIBarButtonItem-perfect-match-in-iOS/)|UIBarButtonItem|2020-07-31|
+|67|[优雅的动画实现方案SVGA、Lottie](https://www.jianshu.com/p/60d28d7bab48)||2020-07-27|
+|66|[iOS Instruments工具使用](https://www.jianshu.com/p/4b882f1bd1a9)||2020-07-16|
+|65|[UIKit: UIControl](http://southpeak.github.io/2015/12/13/cocoa-uikit-uicontrol/?from=%E6%96%87%E7%AB%A0%E9%A1%B5%E5%86%85%E9%93%BE%E6%8E%A5)| UIControl |2020-04-21|
+|64|[史上最详细的iOS之事件的传递和响应机制-原理篇](https://www.jianshu.com/p/2e074db792ba)| 事件响应着链、传递链|2020-04-19|
 |63|[在现有工程中实施基于CTMediator的组件化方案](https://casatwy.com/modulization_in_action.html)| CTMediator 、Target-Action组件化|2020-04-16|
 |63|[iOS应用架构谈 组件化方案](https://casatwy.com/iOS-Modulization.html)|Target-Action组件化|2020-04-16|
 |62|[Xcode命令行脚本打包](https://www.jianshu.com/p/eace84c1b990)|xcodebuild|2020-03-21|
