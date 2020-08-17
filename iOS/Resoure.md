@@ -2,6 +2,10 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|75|[iOS动画篇：UIView动画](https://www.jianshu.com/p/5abc038e4d94)|UIView动画|2020-08-13|
+|74|[iOS11 导航栏按钮位置问题的解决------新](https://www.jianshu.com/p/5ec6e0cc5036)|layoutMargins、leftBarButtonItem|2020-08-12|
+|73|[UIView的Margins](https://www.jianshu.com/p/2b6cdc0edf84)|layoutMargins|2020-08-12|
+|72|[轻松学习之二——iOS利用Runtime自定义控制器POP手势动画](https://www.jianshu.com/p/d39f7d22db6c)||2020-08-08|
 |71|[WWDC 2018：效率提升爆表的 Xcode 和 LLDB 调试技巧](https://juejin.im/post/6844903620329078791#heading-23)|UILayoutGuide|2020-07-31|
 |70|[iOS系统中导航栏的转场解决方案与最佳实践](https://juejin.im/post/6844903700192854024)|导航栏、translucent、opaque、edgesForExtendedLayout、extendedLayoutIncluedsOpaqueBars、contentInsetAdjustmentBehavior、导航栏转场实现方案|2020-07-31|
 |69|[是时候了解一下UILayoutGuide了](https://www.jianshu.com/p/b5c3e0482f29)|UILayoutGuide|2020-07-31|
