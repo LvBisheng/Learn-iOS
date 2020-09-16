@@ -2,6 +2,9 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|78|[Quartz2D](https://www.jianshu.com/p/0e785269dccc)|Quartz2D|2020-09-16|
+|77|[quartz2D 的从零到一学习使用（附赠源码）](https://www.jianshu.com/p/f9f05e12ddd3)|Quartz2D|2020-09-16|
+|76|[iOS动画篇：核心动画](https://www.jianshu.com/p/d05d19f70bac)|核心动画|2020-08-13|
 |75|[iOS动画篇：UIView动画](https://www.jianshu.com/p/5abc038e4d94)|UIView动画|2020-08-13|
 |74|[iOS11 导航栏按钮位置问题的解决------新](https://www.jianshu.com/p/5ec6e0cc5036)|layoutMargins、leftBarButtonItem|2020-08-12|
 |73|[UIView的Margins](https://www.jianshu.com/p/2b6cdc0edf84)|layoutMargins|2020-08-12|
