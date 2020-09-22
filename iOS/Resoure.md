@@ -2,6 +2,11 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|83|[Quartz 2D编程指南之三：路径(Path)](http://southpeak.github.io/2014/11/16/quartz2d-3/)|Quartz 2D|2020-09-22|
+|82|[Quartz 2D编程指南之二：图形上下文(Graphics Contexts)](http://southpeak.github.io/2014/11/11/quartz2d-2/)|Quartz 2D|2020-09-22|
+|81|[Quartz 2D编程指南之一：概览](http://southpeak.github.io/2014/11/10/quartz2d-1/)|Quartz 2D|2020-09-22|
+|80|[国内iOS技术圈内的顶尖人物](https://www.jianshu.com/p/65744450dd7c?utm_campaign=hugo)|牛人博客|2020-09-22|
+|79|[Quartz2D](https://www.jianshu.com/p/0e785269dccc)|Quartz2D|2020-09-16|
 |78|[Quartz2D](https://www.jianshu.com/p/0e785269dccc)|Quartz2D|2020-09-16|
 |77|[quartz2D 的从零到一学习使用（附赠源码）](https://www.jianshu.com/p/f9f05e12ddd3)|Quartz2D|2020-09-16|
 |76|[iOS动画篇：核心动画](https://www.jianshu.com/p/d05d19f70bac)|核心动画|2020-08-13|
