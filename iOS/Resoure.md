@@ -2,6 +2,13 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|90|[iOS开发之为App设置正确的设计颜色](http://www.skyfox.org/ios-app-color-set-and-color-profile.html)|颜色|2020-09-22|
+|89|[Quartz 2D编程指南之九：透明层](http://southpeak.github.io/2014/12/10/quartz2d-9/)|Quartz 2D|2020-09-23|
+|88|[Quartz 2D编程指南之八：渐变](http://southpeak.github.io/2014/12/10/quartz2d-8/)|Quartz 2D|2020-09-23|
+|87|[Quartz 2D编程指南之七：阴影](http://southpeak.github.io/2014/12/05/quartz2d-7/)|Quartz 2D|2020-09-23|
+|86|[Quartz 2D编程指南之六：模式(Pattern)](http://southpeak.github.io/2014/12/05/quartz2d-6/)|Quartz 2D|2020-09-23|
+|85|[Quartz 2D编程指南之五：变换](http://southpeak.github.io/2014/12/02/quartz2d-5/)|Quartz 2D|2020-09-23|
+|84|[Quartz 2D编程指南之四：颜色与颜色空间](http://southpeak.github.io/2014/12/01/quartz2d-4/)|颜色|2020-09-22|
 |83|[Quartz 2D编程指南之三：路径(Path)](http://southpeak.github.io/2014/11/16/quartz2d-3/)|Quartz 2D|2020-09-22|
 |82|[Quartz 2D编程指南之二：图形上下文(Graphics Contexts)](http://southpeak.github.io/2014/11/11/quartz2d-2/)|Quartz 2D|2020-09-22|
 |81|[Quartz 2D编程指南之一：概览](http://southpeak.github.io/2014/11/10/quartz2d-1/)|Quartz 2D|2020-09-22|
