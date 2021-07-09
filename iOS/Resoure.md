@@ -2,6 +2,18 @@
 
 |序号|文章|知识点|学习时间|备注|
 |:--:|:--:|:--|:--:|:--|
+|107|[iOS RunLoop详解](https://juejin.cn/post/6844903588712415239#heading-40)|runloop|2021-07-09|
+|106|[深入理解RunLoop](https://blog.ibireme.com/2015/05/18/runloop/)|runloop，ibireme|2021-07-09|
+|105|[聊聊 iOS 中的网络加密](https://www.jianshu.com/p/75d96b72bfb1)|AFNetworking加密，防止抓包|2021-07-01|
+|104|[注册、登录和 token 的安全之道](https://juejin.cn/post/6844903498329358349)||2021-07-02|
+|103|[der pem cer crt key pfx等概念及区别](https://blog.51cto.com/wushank/1915795)||2021-06-30|
+|102|[iOS之武功秘籍㉑: 组件化](https://juejin.cn/post/6937307792659185700)|组件化、组件通讯方式|2021-06-29|
+|101|[基于CocoaPods的组件化原理及私有库实践](https://juejin.cn/post/6844903774281023496)|私有库|2021-06-28|
+|100|[iOS 本地数据安全存储方案探索](https://www.jianshu.com/p/d19b3e36219a)|AES|2021-06-23|
+|99|[iOS - keychain 详解及变化](https://www.cnblogs.com/junhuawang/p/8194484.html)|keychain|2021-06-23|
+|98|[iOS 优化篇 - 启动优化之Clang插桩实现二进制重排](https://juejin.cn/post/6844904130406793224)|二进制重排|2021-06-22|
+|97|[iOS App启动优化（一）—— 了解App的启动流程](https://juejin.cn/post/6844903968837992461)|启动流程|2021-06-22|
+|96|[iOS里的动态库和静态库](https://www.jianshu.com/p/42891fb90304)|Quartz 2D|2021-06-08|
 |95|[Quartz 2D编程指南之十三：PDF文档的创建、显示及转换](http://southpeak.github.io/2015/01/08/quartz2d-13/)|Quartz 2D|2020-09-25|
 |94|[Quartz 2D编程指南之十二：Core Graphics层绘制](http://southpeak.github.io/2015/01/08/quartz2d-12/)|Quartz 2D|2020-09-25|
 |93|[Quartz 2D编程指南之十一：位图与图像遮罩](http://southpeak.github.io/2015/01/05/quartz2d-11/)|Quartz 2D|2020-09-25|
